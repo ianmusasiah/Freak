@@ -1,0 +1,197 @@
+/* ===================================
+   Freak Stake Calculator
+   style.css
+=================================== */
+
+:root{
+    --bg:#0f172a;
+    --card:#1e293b;
+    --card2:#273549;
+    --primary:#22c55e;
+    --danger:#ef4444;
+    --text:#ffffff;
+    --muted:#94a3b8;
+    --border:#334155;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+}
+
+.header{
+    text-align:center;
+    padding:30px 20px;
+}
+
+.header h1{
+    color:var(--primary);
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.header p{
+    color:var(--muted);
+    font-size:15px;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:var(--card);
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.card h2{
+    margin-bottom:18px;
+    color:var(--primary);
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border-radius:10px;
+    border:2px solid var(--border);
+    background:var(--card2);
+    color:white;
+    font-size:18px;
+    transition:.25s;
+}
+
+input:focus{
+    outline:none;
+    border-color:var(--primary);
+}
+
+.result{
+    margin-top:25px;
+    display:grid;
+    gap:15px;
+}
+
+.resultBox{
+    background:var(--card2);
+    border-radius:12px;
+    padding:18px;
+    text-align:center;
+}
+
+.resultBox .title{
+    display:block;
+    color:var(--muted);
+    margin-bottom:10px;
+}
+
+.resultBox span:last-child{
+    font-size:28px;
+    font-weight:bold;
+    color:var(--primary);
+}
+
+.topRow{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+button{
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.25s;
+}
+
+button:hover{
+    transform:scale(1.04);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:var(--primary);
+}
+
+thead th{
+    padding:14px;
+}
+
+tbody tr{
+    border-bottom:1px solid var(--border);
+    transition:.2s;
+}
+
+tbody tr:hover{
+    background:#314158;
+}
+
+tbody td{
+    text-align:center;
+    padding:14px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:var(--muted);
+    font-size:14px;
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.header h1{
+    font-size:24px;
+}
+
+.card{
+    padding:16px;
+}
+
+.resultBox span:last-child{
+    font-size:22px;
+}
+
+button{
+    width:100%;
+    margin-top:10px;
+}
+
+.topRow{
+    display:block;
+}
+
+.topRow h2{
+    margin-bottom:10px;
+}
+
+}
