@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freak Stake Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>🎯 Freak Stake Calculator</h1>
+    <p>Follow Freak's bankroll strategy perfectly.</p>
+</header>
+
+<main class="container">
+
+    <!-- Calculator -->
+    <section class="card">
+
+        <h2>Calculator</h2>
+
+        <label>Your Bank</label>
+
+        <input
+            id="bank"
+            type="number"
+            placeholder="2500">
+
+        <label>Paste Freak Stake</label>
+
+        <input
+            id="stakeInput"
+            type="number"
+            placeholder="3500"
+            autocomplete="off">
+
+        <div class="result">
+
+            <div class="resultBox">
+
+                <span class="title">
+                    Freak %
+                </span>
+
+                <span
+                    id="percentage">
+                    -
+                </span>
+
+            </div>
+
+            <div class="resultBox">
+
+                <span class="title">
+                    Your Stake
+                </span>
+
+                <span
+                    id="myStake">
+                    KSh 0
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Strategy -->
+
+    <section class="card">
+
+        <div class="topRow">
+
+            <h2>Strategy</h2>
+
+            <button
+                id="resetBtn">
+
+                Reset
+
+            </button>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Stake</th>
+
+                    <th>%</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody
+                id="strategyTable">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+<footer>
+
+Built with ❤️ for bankroll management.
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
